@@ -1,13 +1,13 @@
 # To Build:
 #
 # sudo yum -y install rpmdevtools m4 && rpmdev-setuptree
-# wget https://raw.github.com/nmilford/rpm-autoconf/master/autoconf.spec -O ~/rpmbuild/SPECS/autoconf.spec
+# wget https://raw.github.com/hsmalley/rpm-autoconf/master/autoconf.spec -O ~/rpmbuild/SPECS/autoconf.spec
 # wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz -O  ~/rpmbuild/SOURCES/autoconf-2.69.tar.gz
 # rpmbuild -bb ~/rpmbuild/SPECS/autoconf.spec
 
 Name:       autoconf
-Version:    2.69
-Release:    2
+Version:    2.71
+Release:    1
 Summary:    Auto-Configuration of Source Code
 Group:      Development/Tools
 License:    GNU GPL
@@ -56,6 +56,8 @@ fi
 %{_mandir}/*/*
 
 %changelog
+
+* Thu Nov 02 2023 Hugh Smalley 2.71-1
 * Sat Aug 03 2013 Nathan Milford <nathan@milford.io> 2.69-2
 - Minor cosmetic adjustments.
 * Tue Mar 26 2013 Francis Reyes <ruckerz@gmail.com> 2.69-1
